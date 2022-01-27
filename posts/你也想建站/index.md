@@ -29,7 +29,7 @@
 
   `<USERNAME>.github.io` 例：`ZhangSan.github.io`
 
-- 在仓库中点击`setting`—>`pages`，你会看到"Your site is published at `https://...`"，成功白嫖到地址。注：用它做域名不能与数据库连接。
+- 在仓库中点击`setting`找到`GitHub Pages`点击`Check it out here!`。看到绿背景"Your site is published at `https://...`"，则成功白嫖到地址。注：用它做域名的网站不用数据库。
 
 - 可选择gitPages自带的 Jekyll theme， 我没相中的所以没用。
 
