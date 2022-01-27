@@ -1,0 +1,10 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>HAIR&#39;s world</title>
+        <link>https://hair2020.github.io/en/</link>
+        <description>HAIR&#39;s world</description>
+        <generator>Hugo -- gohugo.io</generator><managingEditor>a644661457@gmail.com (hair)</managingEditor>
+            <webMaster>a644661457@gmail.com (hair)</webMaster>
+            <atom:link href="https://hair2020.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+        </channel>
+</rss>
