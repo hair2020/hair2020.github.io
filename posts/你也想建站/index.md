@@ -39,7 +39,7 @@
 
   
 
-  有人想问为啥我用hugo不用别的，因为他说他最快，还说是用爱建立的，还用GO语言写的。
+  有人想问为啥我用hugo不用别的，引用如下
 
   > The world’s fastest framework for building websites.
   >
