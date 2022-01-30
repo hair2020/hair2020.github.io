@@ -4,13 +4,20 @@
         <link>https://hair2020.github.io/categories/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/</link>
         <description>随便写写 - 分类 - HAIR&#39;s world</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a644661457@gmail.com (hair)</managingEditor>
-            <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 27 Jan 2022 15:47:01 &#43;0800</lastBuildDate><atom:link href="https://hair2020.github.io/categories/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/" rel="self" type="application/rss+xml" /><item>
-    <title>About me</title>
+            <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 30 Jan 2022 20:52:10 &#43;0800</lastBuildDate><atom:link href="https://hair2020.github.io/categories/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/" rel="self" type="application/rss+xml" /><item>
+    <title>如何把旧电脑改成服务器用</title>
+    <link>https://hair2020.github.io/posts/%E5%A6%82%E4%BD%95%E6%8A%8A%E6%97%A7%E7%94%B5%E8%84%91%E6%94%B9%E6%88%90%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8/</link>
+    <pubDate>Sun, 30 Jan 2022 20:52:10 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hair2020.github.io/posts/%E5%A6%82%E4%BD%95%E6%8A%8A%E6%97%A7%E7%94%B5%E8%84%91%E6%94%B9%E6%88%90%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8/</guid>
+    <description><![CDATA[如何把旧电脑改成服务器用 [TOC] 任务 下载服务器系统。本次采用Ubuntu server LTS 20.04 制作系统U盘。本次采用rufus 3.17 安装系统 可从外网访问，本次采用cp]]></description>
+</item><item>
+    <title>About</title>
     <link>https://hair2020.github.io/about/</link>
     <pubDate>Thu, 27 Jan 2022 15:47:01 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://hair2020.github.io/about/</guid>
-    <description><![CDATA[非著名本科院校学生 &hellip;&hellip;.]]></description>
+    <description><![CDATA[关于本站 ​ 之前在OneNote做一些笔记，2021寒假空多，建个博客用用。 ​ 随缘随机更新内容。 警告 本站内容仅供学习、娱乐使用 关于将来 ​ 想搞云]]></description>
 </item><item>
     <title>想建站？</title>
     <link>https://hair2020.github.io/posts/%E4%BD%A0%E4%B9%9F%E6%83%B3%E5%BB%BA%E7%AB%99/</link>

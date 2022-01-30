@@ -69,7 +69,7 @@
 
 ​	本地测试时，由于Edge缓存的原因，无法得到实时更新。看生成public中的favicon.ico换了就没问题。
 
-​	如果调试中看不到如下标签{{< figure src="/Images/links.png">}}
+​	如果调试中看不到如下标签{{< figure src="/images/links.png">}}
 
 ​	去config.toml找`noFavicon = false`
 
@@ -83,7 +83,7 @@
 
 ​	用LoveIt内置 Shortcodes
 
-​	{{< figure src="/Images/ImageInMD.png">}}
+​	{{< figure src="/images/ImageInMD.png">}}
 
 ## 参考文档
 

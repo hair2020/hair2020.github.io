@@ -4,13 +4,20 @@
         <link>https://hair2020.github.io/posts/</link>
         <description>所有文章 | HAIR&#39;s world</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a644661457@gmail.com (hair)</managingEditor>
-            <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 28 Jan 2022 01:13:59 &#43;0800</lastBuildDate><atom:link href="https://hair2020.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Git</title>
+            <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 30 Jan 2022 20:52:10 &#43;0800</lastBuildDate><atom:link href="https://hair2020.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>如何把旧电脑改成服务器用</title>
+    <link>https://hair2020.github.io/posts/%E5%A6%82%E4%BD%95%E6%8A%8A%E6%97%A7%E7%94%B5%E8%84%91%E6%94%B9%E6%88%90%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8/</link>
+    <pubDate>Sun, 30 Jan 2022 20:52:10 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hair2020.github.io/posts/%E5%A6%82%E4%BD%95%E6%8A%8A%E6%97%A7%E7%94%B5%E8%84%91%E6%94%B9%E6%88%90%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8/</guid>
+    <description><![CDATA[如何把旧电脑改成服务器用 [TOC] 任务 下载服务器系统。本次采用Ubuntu server LTS 20.04 制作系统U盘。本次采用rufus 3.17 安装系统 可从外网访问，本次采用cp]]></description>
+</item><item>
+    <title>Git备忘录</title>
     <link>https://hair2020.github.io/posts/git/</link>
     <pubDate>Fri, 28 Jan 2022 01:13:59 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://hair2020.github.io/posts/git/</guid>
-    <description><![CDATA[git命令 [TOC] 上传仓库 初始化 git init 添加所有文件到暂存区 git add . 告诉git，把文件提交到仓库 git commit -m &quot;frist commit&quot; 关联远程仓库 git remote add origin 仓库地址 提交 git push 删除分支 我]]></description>
+    <description><![CDATA[git操作备忘录 [TOC] 上传仓库 初始化 git init 添加所有文件到暂存区 git add . 告诉git，把文件提交到仓库 git commit -m &quot;frist commit&quot; 关联远程仓库 git remote add origin 仓库地址 提交 git push 删除]]></description>
 </item><item>
     <title>想建站？</title>
     <link>https://hair2020.github.io/posts/%E4%BD%A0%E4%B9%9F%E6%83%B3%E5%BB%BA%E7%AB%99/</link>

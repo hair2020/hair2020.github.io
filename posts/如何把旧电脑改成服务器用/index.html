@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>如何把旧电脑改成服务器用 - HAIR&#39;s world</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="如何把旧电脑改成服务器用" />
+<meta property="og:description" content="如何把旧电脑改成服务器用 [TOC] 任务 下载服务器系统。本次采用Ubuntu server LTS 20.04 制作系统U盘。本次采用rufus 3.17 安装系统 可从外网访问，本次采用cp" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hair2020.github.io/posts/%E5%A6%82%E4%BD%95%E6%8A%8A%E6%97%A7%E7%94%B5%E8%84%91%E6%94%B9%E6%88%90%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8/" /><meta property="og:image" content="https://hair2020.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-30T20:52:10+08:00" />
+<meta property="article:modified_time" content="2022-01-30T20:52:10+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://hair2020.github.io/logo.png"/>
+
+<meta name="twitter:title" content="如何把旧电脑改成服务器用"/>
+<meta name="twitter:description" content="如何把旧电脑改成服务器用 [TOC] 任务 下载服务器系统。本次采用Ubuntu server LTS 20.04 制作系统U盘。本次采用rufus 3.17 安装系统 可从外网访问，本次采用cp"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hair2020.github.io/posts/%E5%A6%82%E4%BD%95%E6%8A%8A%E6%97%A7%E7%94%B5%E8%84%91%E6%94%B9%E6%88%90%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8/" /><link rel="prev" href="https://hair2020.github.io/posts/git/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "如何把旧电脑改成服务器用",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/hair2020.github.io\/posts\/%E5%A6%82%E4%BD%95%E6%8A%8A%E6%97%A7%E7%94%B5%E8%84%91%E6%94%B9%E6%88%90%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8\/"
+        },"image": ["https:\/\/hair2020.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "服务器, tutorial","wordcount":  838 ,
+        "url": "https:\/\/hair2020.github.io\/posts\/%E5%A6%82%E4%BD%95%E6%8A%8A%E6%97%A7%E7%94%B5%E8%84%91%E6%94%B9%E6%88%90%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8\/","datePublished": "2022-01-30T20:52:10+08:00","dateModified": "2022-01-30T20:52:10+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/hair2020.github.io\/images\/avatar.png",
+                    "width":  342 ,
+                    "height":  280 
+                }},"author": {
+                "@type": "Person",
+                "name": "hair"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="HAIR&#39;s world"> HAIR&#39;s blog<span class="header-title-post"><i class='far :no_smoking: fa-fw'></i></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="HAIR&#39;s world"> HAIR&#39;s blog<span class="header-title-post"><i class='far :no_smoking: fa-fw'></i></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">如何把旧电脑改成服务器用</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>hair</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/"><i class="far fa-folder fa-fw"></i>随便写写</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-30">2022-01-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 838 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#任务">任务</a></li>
+    <li><a href="#一下载">一.下载</a></li>
+    <li><a href="#二制作u盘">二.制作U盘</a></li>
+    <li><a href="#三安装">三.安装</a></li>
+    <li><a href="#四配置ssh">四.配置ssh</a>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#检查是否安装ssh服务">检查是否安装ssh服务</a></li>
+                <li><a href="#启动ssh服务">启动ssh服务</a></li>
+                <li><a href="#查看版本">查看版本</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#五内网连接">五.内网连接</a>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#win10系统安装securecrt">win10系统，安装SecureCRT</a></li>
+                <li><a href="#查看服务器ip">查看服务器ip</a></li>
+                <li><a href="#打开securecrt">打开SecureCRT</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#六外网连接">六.外网连接</a>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#从五-2开始已获得服务器ip">从五-2开始（已获得服务器ip</a></li>
+                <li><a href="#国内china安装cpolar">国内（China）安装cpolar</a></li>
+                <li><a href="#查看映射到公网的隧道地址">查看映射到公网的隧道地址</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#七参考文档">七.参考文档</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="如何把旧电脑改成服务器用">如何把旧电脑改成服务器用</h1>
+<p>[TOC]</p>
+<h2 id="任务">任务</h2>
+<ul>
+<li>
+<p><i class="far fa-square fa-fw"></i> 下载服务器系统。本次采用Ubuntu server LTS 20.04</p>
+</li>
+<li>
+<p><i class="far fa-square fa-fw"></i> 制作系统U盘。本次采用rufus 3.17</p>
+</li>
+<li>
+<p><i class="far fa-square fa-fw"></i> 安装系统</p>
+</li>
+<li>
+<p><i class="far fa-square fa-fw"></i> 可从外网访问，本次采用cpolar内网穿透工具</p>
+</li>
+</ul>
+<h2 id="一下载">一.下载</h2>
+<ul>
+<li>官网下载</li>
+<li>上这<a href="https://next.itellyou.cn/Original/" target="_blank" rel="noopener noreffer">原版软件 (itellyou.cn)</a></li>
+</ul>
+<h2 id="二制作u盘">二.制作U盘</h2>
+<ul>
+<li>win10系统中用rufus软件将下载的iso文件+U盘（能装的下系统的）制作成启动盘。</li>
+</ul>
+<h2 id="三安装">三.安装</h2>
+<ol>
+<li>进入BIOS，我的老台式是F12 &ndash;&gt; 设置启动方式为U盘</li>
+<li>语言选择，键盘布局，选择install Ubuntu</li>
+<li>Network connections网络设置。若网线已插好，默认DHCP，并把已经获取到的IP显示到对应的网卡上。使用DHCP就直接光标选择Done。其他情况遇到再补充</li>
+<li>Configure proxy设置代理服务器。一般不需要，默认为空，回车</li>
+<li>Configure Ubuntu archive mirror 设置安装软件、更新源。本次采用<a href="http://cn.archive.ubuntu.com/ubuntu/" target="_blank" rel="noopener noreffer">Index of /ubuntu</a></li>
+<li>Filesystem setup磁盘分区，我新手直接选择Use An Entire Disk 回车。需要分区再补充。 显示分区情况，回车</li>
+<li>格式化 continue</li>
+<li>Profile setup设置用户名，密码</li>
+<li>SSH Setup 需要远程登陆选择安装，Import SSH identity 默认选 NO ，回车</li>
+<li>Featured Server Snaps系统服务安装清单，直接Done，回车</li>
+<li>等待安装（我把安全更新跳过了</li>
+<li>设置密码sudo passwd root</li>
+</ol>
+<h2 id="四配置ssh">四.配置ssh</h2>
+<ol>
+<li>
+<h5 id="检查是否安装ssh服务">检查是否安装ssh服务</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">rpm -qa |grep ssh
+</code></pre></td></tr></table>
+</div>
+</div><p>若未安装rpm则执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo apt-get install rpm
+</code></pre></td></tr></table>
+</div>
+</div><p>安装ssh服务器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo apt-get install openssh-server
+</code></pre></td></tr></table>
+</div>
+</div><p>安装ssh客户端</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo apt-get install openssh-client
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<h5 id="启动ssh服务">启动ssh服务</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo service ssh start
+</code></pre></td></tr></table>
+</div>
+</div><p>或者</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo service ssh restart
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<h5 id="查看版本">查看版本</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh -V
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h2 id="五内网连接">五.内网连接</h2>
+<ol>
+<li>
+<h5 id="win10系统安装securecrt">win10系统，安装SecureCRT</h5>
+</li>
+<li>
+<h5 id="查看服务器ip">查看服务器ip</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ipconfig
+</code></pre></td></tr></table>
+</div>
+</div><p>inet后边的ip地址</p>
+</li>
+<li>
+<h5 id="打开securecrt">打开SecureCRT</h5>
+</li>
+</ol>
+<p>​	<figure><img src="/images/djfwq1.png"/>
+</figure>
+</p>
+<p>​	<figure><img src="/images/djfwq2.png"/>
+</figure>
+</p>
+<p>​	<figure><img src="/images/djfwq3.png"/>
+</figure>
+</p>
+<p>完事</p>
+<h2 id="六外网连接">六.外网连接</h2>
+<ol>
+<li>
+<h5 id="从五-2开始已获得服务器ip">从五-2开始（已获得服务器ip</h5>
+</li>
+<li>
+<h5 id="国内china安装cpolar">国内（China）安装cpolar</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">curl -L https://www.cpolar.com/static/downloads/install-release-cpolar.sh | sudo bash
+
+</code></pre></td></tr></table>
+</div>
+</div><p>查看版本</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cpolar version
+</code></pre></td></tr></table>
+</div>
+</div><p><a href="https://www.cpolar.com/" target="_blank" rel="noopener noreffer">cpolar官网</a>注册并登陆后台获取<a href="https://dashboard.cpolar.com/auth" target="_blank" rel="noopener noreffer">认证token</a></p>
+<p>认证</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cpolar authtoken xxxxxxxxxxxxxxxxxx
+</code></pre></td></tr></table>
+</div>
+</div><p>配置cpolar服务开机自启动</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo systemctl enable cpolar
+</code></pre></td></tr></table>
+</div>
+</div><p>守护进程方式，启动cpolar</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo systemctl start cpolar
+</code></pre></td></tr></table>
+</div>
+</div><p>查看守护进程状态</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo systemctl status cpolar
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<h5 id="查看映射到公网的隧道地址">查看映射到公网的隧道地址</h5>
+<p>登录cpolar后台–&gt;<a href="https://dashboard.cpolar.com/status" target="_blank" rel="noopener noreffer">状态</a>，查看一下ssh隧道映射的公网地址：</p>
+<figure><img src="/images/djfwq4.png"/>
+</figure>
+
+</li>
+</ol>
+<p>​		看五-3，</p>
+<p>​		主机名：蓝线</p>
+<p>​		端口：黄线</p>
+<h2 id="七参考文档">七.参考文档</h2>
+<p>[https://www.cpolar.com/blog/how-to-remotely-access-the-raspberry-pi-at-home-with-ssh]:</p>
+<p>还有呢 忘了&hellip;</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-01-30</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a>,&nbsp;<a href="/tags/tutorial/">“tutorial”</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/git/" class="prev" rel="prev" title="Git备忘录"><i class="fas fa-angle-left fa-fw"></i>Git备忘录</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">hair</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@13.0.0/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
