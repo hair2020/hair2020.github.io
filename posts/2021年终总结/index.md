@@ -5,7 +5,7 @@
 
 ### 截个站内的图吧:tiger:
 
-​	{{< figure src="/images/y202100.png">}}
+​	{{< figure src="/images/year-end/y202100.png">}}
 
 {{< admonition success >}}
 

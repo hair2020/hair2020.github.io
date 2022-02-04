@@ -97,11 +97,11 @@
 
 3. ##### 打开SecureCRT
 
-​	{{< figure src="/images/djfwq1.png">}}
+​	{{< figure src="/images/djfwq/djfwq1.png">}}
 
-​	{{< figure src="/images/djfwq2.png">}}
+​	{{< figure src="/images/djfwq/djfwq2.png">}}
 
-​	{{< figure src="/images/djfwq3.png">}}
+​	{{< figure src="/images/djfwq/djfwq3.png">}}
 
 完事
 
@@ -152,7 +152,7 @@
 
    登录cpolar后台–>[状态](https://dashboard.cpolar.com/status)，查看一下ssh隧道映射的公网地址：
 
-   {{< figure src="/images/djfwq4.png">}}
+   {{< figure src="/images/djfwq/djfwq4.png">}}
 
 ​		看五-3，
 
