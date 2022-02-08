@@ -6,10 +6,10 @@
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a644661457@gmail.com (hair)</managingEditor>
             <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 03 Feb 2022 14:45:13 &#43;0800</lastBuildDate><atom:link href="https://hair2020.github.io/categories/grpc/" rel="self" type="application/rss+xml" /><item>
     <title>GRPC_Strat</title>
-    <link>https://hair2020.github.io/posts/grpc_strat/</link>
+    <link>https://hair2020.github.io/posts/go/grpc_strat/</link>
     <pubDate>Thu, 03 Feb 2022 14:45:13 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://hair2020.github.io/posts/grpc_strat/</guid>
+    <guid>https://hair2020.github.io/posts/go/grpc_strat/</guid>
     <description><![CDATA[0.介绍 备忘，不涉及技术 1 proto文件 1.1 项目结构 ​ 1.2 proto 在proto文件夹下新建xxx.proto文件，vscode会提示有插件，安装前俩即]]></description>
 </item></channel>
 </rss>

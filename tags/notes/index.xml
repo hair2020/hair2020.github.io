@@ -6,10 +6,10 @@
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a644661457@gmail.com (hair)</managingEditor>
             <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 06 Feb 2022 21:56:13 &#43;0800</lastBuildDate><atom:link href="https://hair2020.github.io/tags/notes/" rel="self" type="application/rss+xml" /><item>
     <title>BeforeJava</title>
-    <link>https://hair2020.github.io/posts/beforejava/</link>
+    <link>https://hair2020.github.io/posts/java/beforejava/</link>
     <pubDate>Sun, 06 Feb 2022 21:56:13 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://hair2020.github.io/posts/beforejava/</guid>
+    <guid>https://hair2020.github.io/posts/java/beforejava/</guid>
     <description><![CDATA[Java运行机制： ​ JVM JRE JDK JVM java虚拟机（有不同操作系统版本），翻译字节码（class文件） JRE 包含JVM、库函数等 JDK 包含JRE，编译器和调]]></description>
 </item></channel>
 </rss>
