@@ -4,9 +4,16 @@
         <link>https://hair2020.github.io/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a644661457@gmail.com (hair)</managingEditor>
-            <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 09 Feb 2022 16:43:13 &#43;0800</lastBuildDate>
+            <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 09 Feb 2022 20:31:45 &#43;0800</lastBuildDate>
             <atom:link href="https://hair2020.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Grammar memo</title>
+    <link>https://hair2020.github.io/posts/go/grammar/</link>
+    <pubDate>Wed, 09 Feb 2022 20:31:45 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hair2020.github.io/posts/go/grammar/</guid>
+    <description><![CDATA[基中基 uint、unit32、unit64 都是无符号整形，在32位系统中uint和uint32相同，在64位系统中uint和uint64位相]]></description>
+</item><item>
     <title>无损扩容C盘</title>
     <link>https://hair2020.github.io/posts/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%97%A0%E6%8D%9F%E6%89%A9%E5%AE%B9c%E7%9B%98/</link>
     <pubDate>Wed, 09 Feb 2022 16:43:13 &#43;0800</pubDate>
