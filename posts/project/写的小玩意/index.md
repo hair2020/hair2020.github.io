@@ -48,12 +48,16 @@ func GenerateNumber(min int, max int,population int){
 
   知乎文章魔改+封装you-get得叙利亚风格程序界面
 
-  ！下载B站视频时只以BV结尾是不行的，换成av格式结尾就行了。如：`https://www.bilibili.com/video/BV1D5411Z7Mr`
+  ！下载B站视频时只以BV结尾是不行的，换成av格式结尾就行了。
+
+  无效格式：`https://www.bilibili.com/video/BV1D5411Z7Mr`
 
   有效格式：`https://www.bilibili.com/video/BV1D5411Z7Mr?spm_id_from=333.851.b_7265636f6d6d656e64.2`
 
-  bv转av的算法已经被大佬逆向出来了
-
+  
+  
+  好在bv转av的算法已经被大佬逆向出来了
+  
   ##### BV转AV的算法
 
 ```python
