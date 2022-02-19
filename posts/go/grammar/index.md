@@ -55,6 +55,18 @@ func echoString(content interface{}) {
 
   7的二进制数0111，把有效值111向右移unit(i)位，正数左边第一位补0，负数补1，等于除以2的unit(i)次方
 
+#### 切片
+
+- ##### []string
+
+  ```go
+  strs := []string{"123","dsfg"}
+  strs[0][0] // =="1"
+  strs[0][0:0] // ==""
+  ```
+
+  
+
 ## 语法糖
 
 ### ...
