@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Docker - HAIR&#39;s world</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Docker" />
-<meta property="og:description" content="虚拟机爬吧 等我用用再来写 安装问题 win10 已开启hyper-v所有服务 打开报错： System.InvalidOperationExceptionshell Failed to set version to docker-desktop: exit code: -1windows 解决： Windows 10 Docker InvalidOperationException Failed to set version to docker-desktop: exit code: -1 - 尚码园 (shangmayuan.com) 临时方" />
+        <title>Docker-getting-started - HAIR&#39;s world</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Docker-getting-started" />
+<meta property="og:description" content="虚拟机爬吧 等我用用，此篇为Get started tutorial 啥是docker is a runnable instance of an image. You can create, start, stop, move, or delete a container using the DockerAPI or CLI（命令行界面）. can be run on local machines, virtual machines or deployed to the" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hair2020.github.io/posts/go/docker/" /><meta property="og:image" content="https://hair2020.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-02-18T14:56:54+08:00" />
@@ -15,8 +15,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hair2020.github.io/logo.png"/>
 
-<meta name="twitter:title" content="Docker"/>
-<meta name="twitter:description" content="虚拟机爬吧 等我用用再来写 安装问题 win10 已开启hyper-v所有服务 打开报错： System.InvalidOperationExceptionshell Failed to set version to docker-desktop: exit code: -1windows 解决： Windows 10 Docker InvalidOperationException Failed to set version to docker-desktop: exit code: -1 - 尚码园 (shangmayuan.com) 临时方"/>
+<meta name="twitter:title" content="Docker-getting-started"/>
+<meta name="twitter:description" content="虚拟机爬吧 等我用用，此篇为Get started tutorial 啥是docker is a runnable instance of an image. You can create, start, stop, move, or delete a container using the DockerAPI or CLI（命令行界面）. can be run on local machines, virtual machines or deployed to the"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><script>
             var _hmt = _hmt || [];
@@ -34,12 +34,12 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Docker",
+        "headline": "Docker-getting-started",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hair2020.github.io\/posts\/go\/docker\/"
-        },"image": ["https:\/\/hair2020.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "docker","wordcount":  113 ,
+        },"image": ["https:\/\/hair2020.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "docker","wordcount":  575 ,
         "url": "https:\/\/hair2020.github.io\/posts\/go\/docker\/","datePublished": "2022-02-18T14:56:54+08:00","dateModified": "2022-02-18T14:56:54+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -119,10 +119,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Docker</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Docker-getting-started</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>hair</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/go/"><i class="far fa-folder fa-fw"></i>go</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-18">2022-02-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 113 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-18">2022-02-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 575 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -131,12 +131,176 @@
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#虚拟机爬吧">虚拟机爬吧</a></li>
-    <li><a href="#等我用用再来写">等我用用再来写</a></li>
+    <li><a href="#等我用用此篇为get-started-tutorial">等我用用，此篇为Get started tutorial</a></li>
+    <li><a href="#啥是docker">啥是docker</a></li>
+    <li><a href="#1-the-example-of-build-the-apps-container-image">1 The example of &ldquo;Build the app’s container image&rdquo;</a>
+      <ul>
+        <li><a href="#11-get-app-and-create-a-dockerfile">1.1 Get app and Create a <code>Dockerfile</code></a></li>
+        <li><a href="#12-build-the-container-image">1.2 Build the container image</a></li>
+        <li><a href="#13-start-an-app-container">1.3 Start an app container</a></li>
+        <li><a href="#14-use-use-吧">1.4 use use 吧</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-update-the-application">2 Update the application</a>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#直接改删了原来的image再创建">直接改，删了原来的image，再创建</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#remove-a-container-using-the-cli">Remove a container using the CLI</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-push-the-image">3 Push the image</a></li>
+    <li><a href="#记录下文档的反人类缩写">记录下文档的反人类缩写</a>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li>
+                  <ul>
+                    <li><a href="#来自sample-application--docker-documentationhttpsdocsdockercomget-started">来自<a href="https://docs.docker.com/get-started/">Sample application | Docker Documentation</a></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
     <li><a href="#安装问题">安装问题</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="虚拟机爬吧">虚拟机爬吧</h2>
-<h2 id="等我用用再来写">等我用用再来写</h2>
+<h2 id="等我用用此篇为get-started-tutorial">等我用用，此篇为Get started tutorial</h2>
+<h2 id="啥是docker">啥是docker</h2>
+<ul>
+<li>is a runnable instance of an image. You can create, start, stop, move, or delete a container using the DockerAPI or CLI（命令行界面）.</li>
+<li>can be run on local machines, virtual machines or deployed to the cloud.</li>
+<li>is portable (can be run on any OS)</li>
+<li>Containers are isolated from each other and run their own software, binaries, and configurations.</li>
+</ul>
+<h2 id="1-the-example-of-build-the-apps-container-image">1 The example of &ldquo;Build the app’s container image&rdquo;</h2>
+<h3 id="11-get-app-and-create-a-dockerfile">1.1 Get app and Create a <code>Dockerfile</code></h3>
+<p>1.1.1 <a href="https://github.com/docker/getting-started/tree/master/app" target="_blank" rel="noopener noreffer">Download the App contents</a></p>
+<p>1.1.2 Create a file named <code>Dockerfile</code> in the same folder as the file <code>package.json</code> with the following contents.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="c"># syntax=docker/dockerfile:1</span><span class="err">
+</span><span class="err"></span><span class="k">FROM</span><span class="s"> node:12-alpine</span><span class="err">
+</span><span class="err"></span><span class="k">RUN</span> apk add --no-cache python2 g++ make<span class="err">
+</span><span class="err"></span><span class="k">WORKDIR</span><span class="s"> /app</span><span class="err">
+</span><span class="err"></span><span class="k">COPY</span> . .<span class="err">
+</span><span class="err"></span><span class="k">RUN</span> yarn install --production<span class="err">
+</span><span class="err"></span><span class="k">CMD</span> <span class="p">[</span><span class="s2">&#34;node&#34;</span><span class="p">,</span> <span class="s2">&#34;src/index.js&#34;</span><span class="p">]</span><span class="err">
+</span></code></pre></td></tr></table>
+</div>
+</div><h3 id="12-build-the-container-image">1.2 Build the container image</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"> docker build -t getting-started .
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>The <code>-t</code> flag tags our image. Named image <code>geting-started</code></li>
+<li>The <code>.</code> means that Docker should look for the <code>Dockerfile</code> in the current directory</li>
+</ul>
+<h3 id="13-start-an-app-container">1.3 Start an app container</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"> docker run -dp 8080:3000 getting-started
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>-d</code> - run the container in detached mode (in the background)</li>
+<li><code>-p 8080:3000</code> - map port 8080 of the host to port 3000 in the container</li>
+<li><code>docker/getting-started</code> - the image to use</li>
+</ul>
+<h3 id="14-use-use-吧">1.4 use use 吧</h3>
+<p>Add some items</p>
+<p>If you take a quick look at the Docker Dashboard, you should see your two containers running now (this tutorial and your freshly launched app container).</p>
+<h2 id="2-update-the-application">2 Update the application</h2>
+<h5 id="直接改删了原来的image再创建">直接改，删了原来的image，再创建</h5>
+<h3 id="remove-a-container-using-the-cli">Remove a container using the CLI</h3>
+<ol>
+<li>
+<p>Get the ID of the container by using the <code>docker ps</code> command.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"> $ docker ps
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Use the <code>docker stop</code> command to stop the container.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"> # Swap out &lt;the-container-id&gt; with the ID from docker ps
+ $ docker stop &lt;the-container-id&gt;
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Once the container has stopped, you can remove it by using the <code>docker rm</code> command.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"> $ docker rm &lt;the-container-id&gt;
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>You can stop and remove a container in a single command by adding the “force” flag to the <code>docker rm</code> command. For example: <code>docker rm -f &lt;the-container-id&gt;</code></p>
+</blockquote>
+<h2 id="3-push-the-image">3 Push the image</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">docker tag getting-started hair2020/getting-started
+docker push hair2020/getting-started
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="记录下文档的反人类缩写">记录下文档的反人类缩写</h2>
+<h6 id="来自sample-application--docker-documentationhttpsdocsdockercomget-started">来自<a href="https://docs.docker.com/get-started/" target="_blank" rel="noopener noreffer">Sample application | Docker Documentation</a></h6>
+<ul>
+<li>MVP (minimum viable product 最小可行产品)</li>
+<li>CLI（command-line interface命令行界面）</li>
+<li>hub (是吧)</li>
+</ul>
 <h2 id="安装问题">安装问题</h2>
 <ul>
 <li>
