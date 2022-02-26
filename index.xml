@@ -4,9 +4,16 @@
         <link>https://hair2020.github.io/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a644661457@gmail.com (hair)</managingEditor>
-            <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 18 Feb 2022 14:56:54 &#43;0800</lastBuildDate>
+            <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 26 Feb 2022 20:53:51 &#43;0800</lastBuildDate>
             <atom:link href="https://hair2020.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>cppVscodeDebug</title>
+    <link>https://hair2020.github.io/posts/cpp/cppvscodedebug/</link>
+    <pubDate>Sat, 26 Feb 2022 20:53:51 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hair2020.github.io/posts/cpp/cppvscodedebug/</guid>
+    <description><![CDATA[出问题时的配置 数据结构的源码是GBK编码，vscode右下角可以改文件编码为GBK vscode终端选择powershell: Ctrl+Shift+p search Select Deafult profile 输入c]]></description>
+</item><item>
     <title>Docker-getting-started</title>
     <link>https://hair2020.github.io/posts/go/docker/</link>
     <pubDate>Fri, 18 Feb 2022 14:56:54 &#43;0800</pubDate>
@@ -69,12 +76,5 @@
     <author>作者</author>
     <guid>https://hair2020.github.io/posts/%E5%A4%87%E5%BF%98/%E5%A6%82%E4%BD%95%E6%8A%8A%E6%97%A7%E7%94%B5%E8%84%91%E6%94%B9%E6%88%90%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8/</guid>
     <description><![CDATA[如何把旧电脑改成服务器用 [TOC] 任务 下载服务器系统。本次采用Ubuntu server LTS 20.04 制作系统U盘。本次采用rufus 3.17 安装系统 可从外网访问，本次采用cp]]></description>
-</item><item>
-    <title>Git备忘录</title>
-    <link>https://hair2020.github.io/posts/%E5%A4%87%E5%BF%98/git/</link>
-    <pubDate>Fri, 28 Jan 2022 01:13:59 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hair2020.github.io/posts/%E5%A4%87%E5%BF%98/git/</guid>
-    <description><![CDATA[git操作备忘录 [TOC] 上传仓库 初始化 git init 添加所有文件到暂存区 git add . 告诉git，把文件提交到仓库 git commit -m &quot;frist commit&quot; 关联远程仓库 git remote add origin 仓库地址 提交 git push 删除]]></description>
 </item></channel>
 </rss>
