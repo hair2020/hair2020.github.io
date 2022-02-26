@@ -15,7 +15,8 @@ vscode终端选择powershell: `Ctrl+Shift+p` search `Select Deafult profile `
 
 ### 问题出现
 
-调试时终端是cppdbg ![0](D:\hair\buildOwnsth\gitpage\hugo\blog\static\images\cppVscodeDebug\0.png)
+调试时终端是cppdbg
+​{{< figure src="/images/cppVscodeDebug/0.png">}}
 
 试了改注册表，将`计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor`中的`autorun`的值改为`936`（gbk）
 

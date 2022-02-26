@@ -39,7 +39,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hair2020.github.io\/posts\/cpp\/cppvscodedebug\/"
-        },"image": ["https:\/\/hair2020.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "notes, tutorial","wordcount":  333 ,
+        },"image": ["https:\/\/hair2020.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "notes, tutorial","wordcount":  334 ,
         "url": "https:\/\/hair2020.github.io\/posts\/cpp\/cppvscodedebug\/","datePublished": "2022-02-26T20:53:51+08:00","dateModified": "2022-02-26T20:53:51+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -121,7 +121,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">cppVscodeDebug</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>hair</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/cpp/"><i class="far fa-folder fa-fw"></i>cpp</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-26">2022-02-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 333 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-26">2022-02-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 334 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -147,14 +147,10 @@
 <h3 id="按教程进行调试">按教程进行调试</h3>
 <p><a href="https://zhuanlan.zhihu.com/p/85273055" target="_blank" rel="noopener noreffer">VS Code之C/C++程序的调试(Debug)功能简介</a></p>
 <h3 id="问题出现">问题出现</h3>
-<p>调试时终端是cppdbg <img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="D:%5chair%5cbuildOwnsth%5cgitpage%5chugo%5cblog%5cstatic%5cimages%5ccppVscodeDebug%5c0.png"
-        data-srcset="D:%5chair%5cbuildOwnsth%5cgitpage%5chugo%5cblog%5cstatic%5cimages%5ccppVscodeDebug%5c0.png, D:%5chair%5cbuildOwnsth%5cgitpage%5chugo%5cblog%5cstatic%5cimages%5ccppVscodeDebug%5c0.png 1.5x, D:%5chair%5cbuildOwnsth%5cgitpage%5chugo%5cblog%5cstatic%5cimages%5ccppVscodeDebug%5c0.png 2x"
-        data-sizes="auto"
-        alt="D:\hair\buildOwnsth\gitpage\hugo\blog\static\images\cppVscodeDebug\0.png"
-        title="0" /></p>
+<p>调试时终端是cppdbg
+​<figure><img src="/images/cppVscodeDebug/0.png"/>
+</figure>
+</p>
 <p>试了改注册表，将<code>计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor</code>中的<code>autorun</code>的值改为<code>936</code>（gbk）</p>
 <p>然而在调试运行时，他原因不明的自动改为了<code>65001</code>（utf-8）编码，导致原先被GBK编译的文件出现乱码。</p>
 <h3 id="解决">解决</h3>
