@@ -4,7 +4,14 @@
         <link>https://hair2020.github.io/categories/tools/</link>
         <description>tools - 分类 - HAIR&#39;s world</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a644661457@gmail.com (hair)</managingEditor>
-            <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 28 Jan 2022 01:13:59 &#43;0800</lastBuildDate><atom:link href="https://hair2020.github.io/categories/tools/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Mar 2022 17:08:36 &#43;0800</lastBuildDate><atom:link href="https://hair2020.github.io/categories/tools/" rel="self" type="application/rss+xml" /><item>
+    <title>MarkDownMemo</title>
+    <link>https://hair2020.github.io/posts/%E5%A4%87%E5%BF%98/markdownmemo/</link>
+    <pubDate>Tue, 01 Mar 2022 17:08:36 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hair2020.github.io/posts/%E5%A4%87%E5%BF%98/markdownmemo/</guid>
+    <description><![CDATA[公式块formula block 换行newline :段落的换行是使用两个以上空格加上回车。 空格space: Input methods switch to full angle to work 字体 1 2 3 4 5 6 *斜体文本*]]></description>
+</item><item>
     <title>Git备忘录</title>
     <link>https://hair2020.github.io/posts/%E5%A4%87%E5%BF%98/git/</link>
     <pubDate>Fri, 28 Jan 2022 01:13:59 &#43;0800</pubDate>

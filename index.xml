@@ -4,9 +4,23 @@
         <link>https://hair2020.github.io/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a644661457@gmail.com (hair)</managingEditor>
-            <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 26 Feb 2022 20:53:51 &#43;0800</lastBuildDate>
+            <webMaster>a644661457@gmail.com (hair)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 02 Feb 2023 21:39:50 &#43;0800</lastBuildDate>
             <atom:link href="https://hair2020.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>2022年终总结</title>
+    <link>https://hair2020.github.io/posts/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/2022%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</link>
+    <pubDate>Thu, 02 Feb 2023 21:39:50 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hair2020.github.io/posts/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/2022%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</guid>
+    <description><![CDATA[这么晚才来因为我之前想起来几次但被我拖延了。(给自己道歉) 今年听了很多故事，有过很多想法，但是很多都自我否定了。最后决定先考研吧。 2022年]]></description>
+</item><item>
+    <title>MarkDownMemo</title>
+    <link>https://hair2020.github.io/posts/%E5%A4%87%E5%BF%98/markdownmemo/</link>
+    <pubDate>Tue, 01 Mar 2022 17:08:36 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://hair2020.github.io/posts/%E5%A4%87%E5%BF%98/markdownmemo/</guid>
+    <description><![CDATA[公式块formula block 换行newline :段落的换行是使用两个以上空格加上回车。 空格space: Input methods switch to full angle to work 字体 1 2 3 4 5 6 *斜体文本*]]></description>
+</item><item>
     <title>cppVscodeDebug</title>
     <link>https://hair2020.github.io/posts/cpp/cppvscodedebug/</link>
     <pubDate>Sat, 26 Feb 2022 20:53:51 &#43;0800</pubDate>
@@ -62,19 +76,5 @@
     <author>作者</author>
     <guid>https://hair2020.github.io/posts/go/grpc_strat/</guid>
     <description><![CDATA[0.介绍 备忘，不涉及技术 1 proto文件 1.1 项目结构 ​ 1.2 proto 在proto文件夹下新建xxx.proto文件，vscode会提示有插件，安装前俩即]]></description>
-</item><item>
-    <title>2021年终总结</title>
-    <link>https://hair2020.github.io/posts/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/2021%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</link>
-    <pubDate>Mon, 31 Jan 2022 17:42:57 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hair2020.github.io/posts/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/2021%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</guid>
-    <description><![CDATA[🗣 今年没准备＋麻将打久了，不写了。 截个站内的图吧🐯 ​ 成功 幸福的一年续费成功~]]></description>
-</item><item>
-    <title>如何把旧电脑改成服务器用</title>
-    <link>https://hair2020.github.io/posts/%E5%A4%87%E5%BF%98/%E5%A6%82%E4%BD%95%E6%8A%8A%E6%97%A7%E7%94%B5%E8%84%91%E6%94%B9%E6%88%90%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8/</link>
-    <pubDate>Sun, 30 Jan 2022 20:52:10 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://hair2020.github.io/posts/%E5%A4%87%E5%BF%98/%E5%A6%82%E4%BD%95%E6%8A%8A%E6%97%A7%E7%94%B5%E8%84%91%E6%94%B9%E6%88%90%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8/</guid>
-    <description><![CDATA[如何把旧电脑改成服务器用 [TOC] 任务 下载服务器系统。本次采用Ubuntu server LTS 20.04 制作系统U盘。本次采用rufus 3.17 安装系统 可从外网访问，本次采用cp]]></description>
 </item></channel>
 </rss>

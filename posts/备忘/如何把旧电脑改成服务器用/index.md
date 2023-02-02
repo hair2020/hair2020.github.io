@@ -162,6 +162,8 @@
 
 ## 七.参考文档
 
-[https://www.cpolar.com/blog/how-to-remotely-access-the-raspberry-pi-at-home-with-ssh]: 
+[https://www.cpolar.com/blog/how-to-remotely-access-the-raspberry-pi-at-home-with-ssh]
+
+[Ubuntu 20.04 LTS (Focal Fossa) Server Installation Guide (linuxtechi.com)](https://www.linuxtechi.com/ubuntu-20-04-lts-server-installation-guide/)
 
 还有呢 忘了...
