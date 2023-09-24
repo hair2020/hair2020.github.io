@@ -1,7 +1,6 @@
 # Docker-getting-started
 
-## 虚拟机爬吧
-## 等我用用，此篇为Get started tutorial
+## Get started tutorial
 
 ## 啥是docker
 
@@ -115,4 +114,4 @@ docker push hair2020/getting-started
 
   重启docker
 
-  永久方案：...
+  永久方案：在网站消失的时间里，用上了win10企业版，完美运行。

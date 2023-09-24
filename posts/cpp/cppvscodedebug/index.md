@@ -36,4 +36,4 @@ int main() {
 }
 ```
 
-Problem solving.
+Problem solved.

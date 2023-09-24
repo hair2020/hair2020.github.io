@@ -10,7 +10,7 @@
     <pubDate>Fri, 18 Feb 2022 14:56:54 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://hair2020.github.io/posts/go/docker/</guid>
-    <description><![CDATA[虚拟机爬吧 等我用用，此篇为Get started tutorial 啥是docker is a runnable instance of an image. You can create, start, stop, move, or delete a container using the DockerAPI or CLI（命令行界面）. can be run on local machines, virtual machines or deployed to the]]></description>
+    <description><![CDATA[Get started tutorial 啥是docker is a runnable instance of an image. You can create, start, stop, move, or delete a container using the DockerAPI or CLI（命令行界面）. can be run on local machines, virtual machines or deployed to the cloud. is portable (can be run on any OS) Containers are isolated from each other]]></description>
 </item><item>
     <title>GRPC_Strat</title>
     <link>https://hair2020.github.io/posts/go/grpc_strat/</link>
